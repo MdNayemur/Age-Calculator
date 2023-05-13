@@ -9,7 +9,7 @@ document.getElementById("Tomonth").value=_Tomonth;
 document.getElementById("Toyear").value=_Toyear;
 
 _btn.onclick=function(){
-  var _Birthday=document.getElementById("Birthday").value;
+    var _Birthday=document.getElementById("Birthday").value;
     var _Birthmonth=document.getElementById("Birthmonth").value;
     var _Birthyear=document.getElementById("Birthyear").value;
 
