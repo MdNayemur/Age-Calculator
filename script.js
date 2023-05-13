@@ -9,7 +9,9 @@ document.getElementById("Tomonth").value=_Tomonth;
 document.getElementById("Toyear").value=_Toyear;
 
 _btn.onclick=function(){
-    var _Birthday=document.getElementById("Birthday").value;
+    
+    if(_Birthday !="" && _Birthmonth !="" && _Birthyear !="" ){
+        var _Birthday=document.getElementById("Birthday").value;
     var _Birthmonth=document.getElementById("Birthmonth").value;
     var _Birthyear=document.getElementById("Birthyear").value;
     if (_Today<_Birthday) {
@@ -59,4 +61,10 @@ _btn.onclick=function(){
             document.getElementById("otput").innerHTML="Your age is"+"&nbsp;"+_Toyear+"&nbsp;"+"years"+"&nbsp;"+_Tomonth+"&nbsp;"+"months"+"&nbsp;"+_Today+"&nbsp;"+"days";
 
     }
+    
+    }
+     else{
+        alert('Insert Your Birthdate Properly');
+    }
+    
 }
